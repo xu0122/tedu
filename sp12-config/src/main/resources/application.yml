@@ -1,21 +1,30 @@
 spring:
   application:
     name: config-server
-  
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/你的名字路径/sp-config
-          searchPaths: config
-          #username: your-username
-          #password: your-password
+    
+  profiles:
+    active: native    
+    
     
   rabbitmq:
     host: 192.168.64.140
     port: 5672
     username: admin
     password: admin
+
+
+    
+     
+ # cloud:
+  #  config:
+  #    server:
+  #      git:
+  #        uri: https://github.com/你的名字路径/sp-config
+  #        searchPaths: config
+          #username: your-username
+          #password: your-password
+    
+
 
     
 server:
